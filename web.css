@@ -67,8 +67,8 @@ header {
 }
 
 .marca-aulanova img {
-    width: 42px;
-    height: 42px;
+    width: 55px;
+    height: 55px;
     object-fit: contain;
     display: block;
 }
@@ -80,8 +80,8 @@ header {
 
 /* Tamaño del logo en el pie de página */
 footer .marca-aulanova img {
-    width: 36px;
-    height: 36px;
+    width: 45px;
+    height: 45px;
 }
 
 /* PORTADA */
