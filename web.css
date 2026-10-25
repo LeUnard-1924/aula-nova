@@ -58,6 +58,32 @@ header {
     color: var(--acento) !important;
 }
 
+/* Logo de AulaNova en el encabezado y pie de página */
+.marca-aulanova {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.marca-aulanova img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    display: block;
+}
+
+.marca-aulanova span {
+    font-size: inherit;
+    font-weight: 700;
+}
+
+/* Tamaño del logo en el pie de página */
+footer .marca-aulanova img {
+    width: 36px;
+    height: 36px;
+}
+
 /* PORTADA */
 
 .hero {
