@@ -1,0 +1,470 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --fondo: #0b1020;
+    --superficie: #172033;
+    --tarjeta: #1d2940;
+    --texto: #f4f7fb;
+    --texto-secundario: #b6c2d5;
+    --acento: #42d6c4;
+    --borde: #33445e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: var(--fondo);
+    color: var(--texto);
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background: rgba(23, 32, 51, 0.97);
+    border-bottom: 1px solid var(--borde);
+}
+
+.navbar {
+    padding: 18px 0;
+}
+
+.navbar-brand {
+    color: var(--acento) !important;
+    font-size: 1.6rem;
+}
+
+.nav-link {
+    color: var(--texto-secundario) !important;
+    margin-left: 14px;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--acento) !important;
+}
+
+/* PORTADA */
+
+.hero {
+    min-height: 490px;
+    display: flex;
+    align-items: center;
+    padding: 85px 0;
+    background:
+        linear-gradient(90deg, rgba(11,16,32,0.96),
+        rgba(11,16,32,0.76)),
+        url("img/img1.png") center 45% / cover no-repeat;
+}
+
+.hero-contenido {
+    max-width: 720px;
+}
+
+.etiqueta {
+    display: inline-block;
+    color: var(--acento);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 14px;
+}
+
+.hero h1 {
+    font-size: clamp(2.3rem, 5vw, 4.2rem);
+    line-height: 1.15;
+    font-weight: 800;
+    margin-bottom: 22px;
+}
+
+.hero h1 span {
+    color: var(--acento);
+}
+
+.hero p {
+    color: var(--texto-secundario);
+    max-width: 580px;
+    font-size: 1.05rem;
+    margin-bottom: 28px;
+}
+
+.btn-principal,
+.btn-secundario {
+    display: inline-block;
+    padding: 12px 22px;
+    margin: 5px 8px 5px 0;
+    border-radius: 8px;
+    font-weight: 700;
+    transition: 0.25s ease;
+}
+
+.btn-principal {
+    background: var(--acento);
+    border: 1px solid var(--acento);
+    color: #07151b;
+}
+
+.btn-principal:hover {
+    background: #72eadb;
+    border-color: #72eadb;
+    color: #07151b;
+    transform: translateY(-2px);
+}
+
+.btn-secundario {
+    background: transparent;
+    border: 1px solid var(--borde);
+    color: var(--texto);
+}
+
+.btn-secundario:hover {
+    border-color: var(--acento);
+    color: var(--acento);
+}
+
+/* SECCIONES */
+
+.seccion {
+    padding: 85px 0;
+}
+
+.encabezado-seccion {
+    max-width: 700px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.encabezado-seccion h2,
+.registro-texto h2 {
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.encabezado-seccion p,
+.registro-texto p {
+    color: var(--texto-secundario);
+}
+
+/* TARJETAS ACADÉMICAS */
+
+.programa {
+    background: var(--tarjeta);
+    color: var(--texto);
+    border: 1px solid var(--borde);
+    border-radius: 14px;
+    overflow: hidden;
+    transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.programa:hover {
+    transform: translateY(-5px);
+    border-color: var(--acento);
+}
+
+.programa .card-img-top {
+    height: 205px;
+    object-fit: cover;
+}
+
+.programa .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+}
+
+.categoria {
+    color: var(--acento);
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.programa h3 {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+}
+
+.programa p {
+    color: var(--texto-secundario);
+    flex-grow: 1;
+}
+
+.programa .btn {
+    color: var(--acento);
+    border-color: var(--acento);
+    margin-top: 10px;
+}
+
+.programa .btn:hover {
+    background: var(--acento);
+    color: #07151b;
+}
+
+/* BENEFICIOS */
+
+.beneficios {
+    background: var(--superficie);
+}
+
+.beneficio {
+    height: 100%;
+    padding: 28px;
+    background: var(--fondo);
+    border: 1px solid var(--borde);
+    border-radius: 12px;
+}
+
+.icono {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    background: rgba(66, 214, 196, 0.12);
+    color: var(--acento);
+    font-weight: 800;
+}
+
+.beneficio h3 {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+}
+
+.beneficio p {
+    color: var(--texto-secundario);
+    margin-bottom: 0;
+}
+
+/* RULETA */
+
+.ruleta-contenedor {
+    max-width: 570px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    background: var(--superficie);
+    border: 1px solid var(--borde);
+    border-radius: 18px;
+    text-align: center;
+}
+
+.ruleta-marco {
+    position: relative;
+    width: min(100%, 440px);
+    margin: 0 auto 25px;
+}
+
+#ruletaCanvas {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    background: var(--tarjeta);
+}
+
+.puntero {
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    z-index: 2;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 17px solid transparent;
+    border-right: 17px solid transparent;
+    border-top: 35px solid #ffffff;
+    filter: drop-shadow(0 2px 3px rgba(0,0,0,0.5));
+}
+
+.btn-girar {
+    min-width: 180px;
+}
+
+.btn-girar:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.resultado {
+    min-height: 35px;
+    margin: 20px 0 10px;
+    color: var(--acento);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.nota-ruleta {
+    max-width: 430px;
+    margin: 22px auto 0;
+    color: var(--texto-secundario);
+    font-size: 0.85rem;
+}
+
+/* FORMULARIO */
+
+.registro {
+    background: var(--superficie);
+}
+
+.registro-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 55px;
+    align-items: start;
+}
+
+.registro-texto {
+    padding-top: 20px;
+}
+
+.texto-pequeno {
+    font-size: 0.88rem;
+}
+
+#formularioRegistro {
+    padding: 30px;
+    background: var(--fondo);
+    border: 1px solid var(--borde);
+    border-radius: 14px;
+}
+
+.form-label,
+.form-check-label {
+    color: var(--texto);
+}
+
+.form-control,
+.form-select {
+    padding: 12px;
+    background-color: var(--superficie);
+    border: 1px solid var(--borde);
+    color: var(--texto);
+}
+
+.form-control:focus,
+.form-select:focus {
+    background-color: var(--superficie);
+    color: var(--texto);
+    border-color: var(--acento);
+    box-shadow: 0 0 0 0.2rem rgba(66, 214, 196, 0.15);
+}
+
+.form-select option {
+    background: var(--superficie);
+    color: var(--texto);
+}
+
+.form-check-input {
+    background-color: var(--superficie);
+    border-color: var(--borde);
+}
+
+.form-check-input:checked {
+    background-color: var(--acento);
+    border-color: var(--acento);
+}
+
+.mensaje {
+    margin-top: 18px;
+    font-weight: 600;
+}
+
+.mensaje.exito {
+    color: var(--acento);
+}
+
+.mensaje.error {
+    color: #ff9999;
+}
+
+/* PIE DE PÁGINA */
+
+footer {
+    padding: 35px 0;
+    background: #070b15;
+    border-top: 1px solid var(--borde);
+}
+
+.footer-contenido {
+    text-align: center;
+}
+
+.footer-contenido p {
+    margin: 8px 0;
+    color: var(--texto-secundario);
+}
+
+.footer-contenido a:last-child {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--acento);
+}
+
+/* ACCESIBILIDAD Y ADAPTACIÓN */
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #ffffff;
+    outline-offset: 3px;
+}
+
+@media (max-width: 767px) {
+    .hero {
+        min-height: 420px;
+        padding: 65px 0;
+        background-position: 60% center;
+    }
+
+    .seccion {
+        padding: 60px 0;
+    }
+
+    .nav-link {
+        margin-left: 0;
+        padding: 10px 0;
+    }
+
+    .registro-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    #formularioRegistro {
+        padding: 22px;
+    }
+
+    .ruleta-contenedor {
+        padding: 25px 12px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}

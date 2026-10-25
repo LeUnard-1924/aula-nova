@@ -1,0 +1,348 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conoce nuestros programas académicos y registra tu interés en AulaNova.">
+    <title>AulaNova | Formación para el futuro</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Hoja de estilos propia -->
+    <link rel="stylesheet" href="web.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO Y NAVEGACIÓN -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#inicio">AulaNova</a>
+
+                <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#menu"
+                        aria-controls="menu" aria-expanded="false"
+                        aria-label="Abrir menú de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#programas">Programas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ruleta">Orientación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#registro">Registro</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- PORTADA: AQUÍ VA LA IMAGEN PRINCIPAL -->
+        <section class="hero" id="inicio">
+            <div class="container">
+                <div class="hero-contenido">
+                    <span class="etiqueta">TU FUTURO COMIENZA AQUÍ</span>
+
+                    <h1>Aprende hoy.<br>
+                        <span>Construye tu futuro.</span>
+                    </h1>
+
+                    <p>
+                        Descubre programas académicos que te ayuden a desarrollar
+                        tus habilidades y prepararte para nuevos desafíos.
+                    </p>
+
+                    <a href="#programas" class="btn btn-principal">
+                        Explorar programas
+                    </a>
+                    <a href="#registro" class="btn btn-secundario">
+                        Solicitar información
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROGRAMAS ACADÉMICOS -->
+        <section class="seccion" id="programas">
+            <div class="container">
+                <div class="encabezado-seccion">
+                    <span class="etiqueta">NUESTRAS OPCIONES</span>
+                    <h2>Programas académicos</h2>
+                    <p>
+                        Conoce algunas de las áreas de formación disponibles
+                        y encuentra la que mejor se adapte a tus intereses.
+                    </p>
+                </div>
+
+                <div class="row g-4">
+
+                    <div class="col-md-6 col-lg-4">
+                        <article class="card programa h-100">
+                            <img src="img/img2.png"
+                                 class="card-img-top"
+                                 alt="Estudiante aprendiendo programación en una computadora">
+                            <div class="card-body">
+                                <span class="categoria">Tecnología</span>
+                                <h3 class="card-title">Software e inteligencia artificial</h3>
+                                <p class="card-text">
+                                    Aprende fundamentos de programación,
+                                    desarrollo web y soluciones digitales.
+                                </p>
+                                <button class="btn btn-outline-info elegir-programa"
+                                        data-programa="Software e Inteligencia Artificial">
+                                    Me interesa
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <article class="card programa h-100">
+                            <img src="img/img3.png"
+                                 class="card-img-top"
+                                 alt="Diseñador trabajando en una interfaz digital">
+                            <div class="card-body">
+                                <span class="categoria">Creatividad</span>
+                                <h3 class="card-title">Diseño digital</h3>
+                                <p class="card-text">
+                                    Desarrolla habilidades de diseño visual,
+                                    composición y creación de contenido digital.
+                                </p>
+                                <button class="btn btn-outline-info elegir-programa"
+                                        data-programa="Diseño Digital">
+                                    Me interesa
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <article class="card programa h-100">
+                            <img src="img/img4.png"
+                                 class="card-img-top"
+                                 alt="Estudiantes trabajando en un proyecto de gestión">
+                            <div class="card-body">
+                                <span class="categoria">Gestión</span>
+                                <h3 class="card-title">Administración de empresas</h3>
+                                <p class="card-text">
+                                    Conoce herramientas de organización,
+                                    gestión y planificación de proyectos.
+                                </p>
+                                <button class="btn btn-outline-info elegir-programa"
+                                        data-programa="Administración de Empresas">
+                                    Me interesa
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- BENEFICIOS -->
+        <section class="seccion beneficios">
+            <div class="container">
+                <div class="encabezado-seccion">
+                    <span class="etiqueta">NUESTRA PROPUESTA</span>
+                    <h2>Una experiencia pensada para ti</h2>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="beneficio">
+                            <div class="icono">01</div>
+                            <h3>Información clara</h3>
+                            <p>Encuentra los programas y sus características en un solo lugar.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="beneficio">
+                            <div class="icono">02</div>
+                            <h3>Navegación sencilla</h3>
+                            <p>Accede rápidamente a las secciones desde cualquier dispositivo.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="beneficio">
+                            <div class="icono">03</div>
+                            <h3>Registro práctico</h3>
+                            <p>Completa un formulario para manifestar tu interés académico.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RULETA DE ORIENTACIÓN ACADÉMICA -->
+        <section class="seccion" id="ruleta">
+            <div class="container">
+                <div class="encabezado-seccion">
+                    <span class="etiqueta">DESCUBRE TUS OPCIONES</span>
+                    <h2>Ruleta de orientación académica</h2>
+                    <p>
+                        ¿No sabes qué área explorar? Gira la ruleta y descubre
+                        una opción que puedes conocer mejor.
+                    </p>
+                </div>
+
+                <div class="ruleta-contenedor">
+                    <div class="ruleta-marco">
+                        <div class="puntero" aria-hidden="true"></div>
+                        <canvas id="ruletaCanvas" width="440" height="440"
+                                role="img"
+                                aria-label="Ruleta con seis áreas académicas">
+                            Ruleta de orientación académica.
+                        </canvas>
+                    </div>
+
+                    <button type="button" id="girarRuleta"
+                            class="btn btn-principal btn-girar">
+                        Girar ruleta
+                    </button>
+
+                    <p id="resultadoRuleta" class="resultado"
+                       aria-live="polite">
+                        Pulsa el botón para descubrir un área.
+                    </p>
+
+                    <button type="button" id="usarResultado"
+                            class="btn btn-secundario" hidden>
+                        Me interesa esta opción
+                    </button>
+
+                    <p class="nota-ruleta">
+                        Esta ruleta es una herramienta orientativa y recreativa.
+                        El resultado no determina qué carrera debes elegir.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FORMULARIO DE REGISTRO -->
+        <section class="seccion registro" id="registro">
+            <div class="container">
+                <div class="registro-grid">
+
+                    <div class="registro-texto">
+                        <span class="etiqueta">DA EL SIGUIENTE PASO</span>
+                        <h2>Solicita información</h2>
+                        <p>
+                            Completa el formulario para indicar qué programa
+                            académico te interesa. Los datos se utilizarán
+                            únicamente para esta demostración.
+                        </p>
+                        <p class="texto-pequeno">
+                            Esta versión es una demostración educativa:
+                            no envía los datos a una institución ni los guarda
+                            en una base de datos.
+                        </p>
+                    </div>
+
+                    <form id="formularioRegistro" method="post">
+                        <div class="mb-3">
+                            <label for="nombres" class="form-label">
+                                Nombres y apellidos
+                            </label>
+                            <input type="text" class="form-control"
+                                   id="nombres" name="nombres"
+                                   minlength="3" maxlength="100"
+                                   autocomplete="name" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="correo" class="form-label">
+                                Correo electrónico
+                            </label>
+                            <input type="email" class="form-control"
+                                   id="correo" name="correo"
+                                   maxlength="120"
+                                   autocomplete="email" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="telefono" class="form-label">
+                                Número de contacto
+                            </label>
+                            <input type="tel" class="form-control"
+                                   id="telefono" name="telefono"
+                                   minlength="7" maxlength="15"
+                                   inputmode="tel"
+                                   autocomplete="tel"
+                                   pattern="[0-9+() -]{7,15}"
+                                   title="Ingresa un número de contacto válido."
+                                   required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="programa" class="form-label">
+                                Programa de interés
+                            </label>
+                            <select id="programa" name="programa"
+                                    class="form-select" required>
+                                <option value="">Selecciona un programa</option>
+                                <option>Software e Inteligencia Artificial</option>
+                                <option>Diseño Digital</option>
+                                <option>Administración de Empresas</option>
+                                <option>Marketing Digital</option>
+                                <option>Redes y Ciberseguridad</option>
+                                <option>Gestión de Proyectos</option>
+                            </select>
+                        </div>
+
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox"
+                                   id="aceptacion" required>
+                            <label class="form-check-label" for="aceptacion">
+                                Acepto el uso de estos datos para esta
+                                demostración académica.
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-principal w-100">
+                            Enviar registro de prueba
+                        </button>
+
+                        <div id="mensajeFormulario" class="mensaje"
+                             role="status" aria-live="polite"></div>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <div class="container footer-contenido">
+            <a class="navbar-brand fw-bold" href="#inicio">AulaNova</a>
+            <p>Propuesta académica de desarrollo web.</p>
+            <p class="texto-pequeno">
+                Proyecto educativo. No representa una institución real.
+            </p>
+            <a href="#inicio">Volver al inicio ↑</a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap y JavaScript propio -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="web.js"></script>
+</body>
+</html>
